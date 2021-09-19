@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sunil Rodrigues Profile Assignment</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-navigation" id="nav">
+            <div class="header">
+                <div>
+                    <span>Menu</span>
+                </div>
+                <div class="icon" onclick="closeNavigation()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/></svg>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <button id="root" onclick="navigate('../')">About Me</button>
+                <button id="interest-in-it" onclick="navigate('../interest-in-it/')">Interest in IT</button>
+                <button id="ideal-job" onclick="navigate('../ideal-job/')">Ideal Job</button>
+                <button id="profile" onclick="navigate('../profile/')">Profile</button>
+                <button id="project-idea" onclick="navigate('')">Project Idea</button>
+            </div>
+        </div>
+        <div class="page-viewport">
+            <div class="page-header">
+                <div class="icon" onclick="openNavigation();">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 24 24" width="40px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg>
+                </div>
+                <div class="title-content">
+                    <span>COSC2196/CPT110 - Assignment #1</span>
+                </div>
+                <div class="link-area">
+                    <span>Sunil Rodrigues (s3923382)</span>
+                    <span><a href="https://github.com/RodriguesSunil/SR" target="_blank" rel="noopener noreferrer">GitHub Repo</a></span>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="page-area">
+                    <!-- PAGE SPECIFIC CONTENT GOES BELOW THIS -->
+                    
+                        <h1>Project Idea - <i>Sunil Rodrigues</i></h1>
+                                            
+                        <div style="display:flex; align-items:center; gap:3em; padding:2em; padding-top:0;">
+                            <div>
+                                <h3>Overview</h3>
+                                <p>
+                                    I have chosen a project that will help my organisation in management and deployment of SAP Plant Maintenance Training. Over the years we have had various versions of LMS (Learning Management Systems) and these systems though good require a lot of customisations to make them do what you need to do. This gets quite expensive and requires constant updating as items and training materials change.
+                                </p>
+
+                                <p>
+                                    With my implementation of SAP at the organisation I work, I had set up all the training materials in a SQL database with a Dotnet front end application. This was done for me by one of my System Engineers. I want to harness this application and build a web front end to capture the users in the organisation, what roles they hold to determine what training would be required for them to complete. The front end would record what training the users have completed and create a career progression pathway for them. 
+                                    
+                                </p>                           
+                                                         
+                                                                
+                            
+                            </div>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:3em; padding:2em;">
+                            <div>
+                                <h3>Motivation</h3>
+                                <p>
+                                    Any system implemented is as good as the users using it and the data that you capture. Over the years I have worked at various mining companies and the common theme that come out is that SAP is quite time consuming to learn and hence people shy away from it.  One of the reasons for this is that we try to teach the users everything, which is not ideal for the user base that is not used to the learning techniques that we use. Hence, I want to build an application that gives the user the ability to choose the skills they need, to do his job first and then enhance his skills to improve himself so they become more marketable.
+                                </p>
+                                <p>
+                                    There are many mining companies using SAP and most are in the same situation. They currently rely on SAP Trainers to come to site to run courses. Having an application that is self-learning, will reduce the cost of labour and also give the users a better training platform.
+                                              
+                                </p>
+                                                        
+                            </div>
+                            
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:3em; padding:2em;">
+                            <div>
+                                <h3>Description</h3>
+                                <p>
+                                    The application will be based on mobile technology and available on any browser, after authenticating using Azure. Users in the organisation are already within Azure, so I would need to link them to their credentials. A Mind map showing the flow of data has been made. This is the initial map and will be updated as more development is progressed.
+                                </p>
+                            </div>
+                            <div>
+                                <img
+                                    src="../src/Map.png"
+                                    alt="profile-img"
+                                    style="border-radius: 6px;"
+                                    width="500"
+                                >
+                            </div>
+                        </div>
+
+                        <div style="padding:2em;">
+                            <p>
+                                The below items will be included as part of the overall application. 
+                                <ul>
+                                    <Li>User Access – this will be governed by Azure AD with MFA and their corresponding SAP Roles and Positions</Li>
+                                    <li>Training Materials – this will be developed for each of the transactions that the user will undertake. It will simply follow the steps training using the web application and SAP training client.</li>
+                                    <li>Learning Outcomes – each position will have core competencies set up using a stepped approach. Users will progress from the lower levels to higher levels with each core competency achieved recorded against their logins.</li>
+                                    <li>SQL Database – will store the competencies achieved and the master data required to run the application. This will be exposed to Power BI for reporting.</li>
+                                    <li>Dashboard – this will be a Power BI window that will show the competencies achieved for the department, sub-department and crew. It will aid the management to see how good their teams are with respect to achieving their competencies.</li>
+                                    <li>SAP – the position and user roles assigned to the users will be exposed to the application. This will assist the application to show the training and competencies required for individual user. The SAP Organisation structure will be used to match users to department and line managers.</li>
+                                    <li>Chat – chat will be available using AI to pick out key answers to queries that the user may have. A dictionary of key answers will be maintained and updated as the users' queries get recorded. The ability to talk to a Subject Matter Expert (SME) will be available.</li>
+                                    <li>SharePoint – will store the physical training catalogue and the videos used for training. This will ensure the latest documentation is available for the users.</li>
+                                    
+                                </ul>
+                                
+               
+                                The training will be based on competency levels and the users will be able to progress themselves to the next level once they have completed each level. The users will be able to check in SAP what they have done as the client in which they practice will be kept live.
+
+                                          
+                            </p>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:3em; padding:2em;">
+                            <div>
+                                <h3>Tools and Technologies</h3>
+                                <p>
+                                    There would be a fair amount of connectivity between various existing applications. Our organisation stores all documents in SharePoint Online and Teams so this would need to be connected to the application. User roles and position from SAP and Azure Active Directory will need to be migrated. The web application would need to be exposed to the users using multifactor authentication (MFA) so that data within our current applications are not compromised. Current training materials will need to be revamped to make them mobile friendly. New ways to find the correct training when needed using QR codes will be implemented.
+                                </p>
+                                
+                                                        
+                            </div>
+                            
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:3em; padding:2em;">
+                            <div>
+                                <h3>Skills Required</h3>
+                                <p>
+                                    Looking through the requirements for the application, the following skills will be required to successfully complete the project.
+                                </p>
+                                <ul>
+                                    <li>Web Developer</li>
+                                    <li>Software Engineer</li>
+                                    <li>SAP Functional Consultant</li>
+                                    <li>BI Analyst</li>
+                                    <li>Database Administrator</li>
+                                    <li>Program/Project Manager</li>
+                                    <li>Cost Controller</li>
+                                    <li>Learning and Development Consultant</li>
+                                </ul>     
+                            </div>
+                        
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:3em; padding:2em;">
+                            <div>
+                                <h3>Outcome</h3>
+                                <p>
+                                    The project will take some time to bed in and get working. The initial learning from testing and piloting a small user base will be necessary so improvements can be made. A key part will be in the reporting, as this will help me to make changes where it matters the most. Successful implementation will improve the data capture and errors in the system. The application also then could be scalable to other types of training such as operations or health and safety.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    <!-- PAGE SPECIFIC CONTENT GOES ABOVE THIS -->
+                </div>
+            </div>
+        </div>
+       
+    <script src="../script.js"></script>
+</body>
+</html>
